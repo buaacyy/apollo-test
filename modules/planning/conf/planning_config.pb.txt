@@ -53,8 +53,13 @@ default_task_config: {
     path_resolution: 1.0
     obstacle_ignore_distance: 20.0
     obstacle_collision_distance: 0.5
+
+    #obstacle_risk_distance: 2.0
     obstacle_risk_distance: 2.0
-    obstacle_collision_cost: 1e8
+
+    obstacle_collision_cost: 1e1
+    #obstacle_collision_cost: 1e8
+
     path_l_cost: 6.5
     path_dl_cost: 8e3
     path_ddl_cost: 1.0
@@ -100,8 +105,13 @@ default_task_config: {
       boundary_buffer: 0.25
       high_speed_centric_acceleration_limit: 0.8
       low_speed_centric_acceleration_limit: 1.2
-      high_speed_threshold: 12.58
-      low_speed_threshold: 7.5
+
+      #high_speed_threshold: 12.58
+      high_speed_threshold: 30
+
+      #low_speed_threshold: 7.5
+      low_speed_threshold: 1.0
+
       minimal_kappa: 0.00001
       point_extension: 1.0
       lowest_speed: 2.5
@@ -129,20 +139,34 @@ default_task_config: {
     default_obstacle_cost: 1e3
     default_speed_cost: 1.0e3
     exceed_speed_penalty: 10.0
-    low_speed_penalty: 10.0
+    
+    #low_speed_penalty: 10.0
+    low_speed_penalty: 30.0
+
+
     keep_clear_low_speed_penalty: 10.0
     accel_penalty: 1.0
     decel_penalty: 1.0
     positive_jerk_coeff: 1.0
     negative_jerk_coeff: 1.0
-    max_acceleration: 3.0
-    max_deceleration: -4.0
+    
+    #max_acceleration: 3.0
+    #max_deceleration: -4.0
+    max_acceleration: 20.0
+    max_deceleration: -1.0
+
+
     st_boundary_config {
       boundary_buffer: 0.1
       high_speed_centric_acceleration_limit: 0.8
       low_speed_centric_acceleration_limit: 1.2
-      high_speed_threshold: 12.58
-      low_speed_threshold: 7.5
+
+      #high_speed_threshold: 12.58
+      high_speed_threshold: 30
+
+      #low_speed_threshold: 7.5
+      low_speed_threshold: 1.0
+
       minimal_kappa: 0.00001
       point_extension: 1.0
       lowest_speed: 2.5
