@@ -16,7 +16,8 @@ default_task_config: {
       stop_distance: 1.0
     }
     stop_sign: {
-      enabled: true
+      enabled: false
+      #enabled: true
       #stop_distance: 1.0
       stop_distance: 10.0
     }
