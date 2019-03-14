@@ -17,7 +17,8 @@ default_task_config: {
     }
     stop_sign: {
       enabled: true
-      stop_distance: 1.0
+      #stop_distance: 1.0
+      stop_distance: 10.0
     }
     traffic_light: {
       enabled: false
@@ -182,6 +183,8 @@ default_task_config: {
   qp_st_speed_config {
     total_path_length: 250.0
     total_time: 7.0
+    #preferred_max_acceleration: 2.5
+    #preferred_min_deceleration: -3.3
     preferred_max_acceleration: 2.5
     preferred_min_deceleration: -3.3
     max_acceleration: 3.0
