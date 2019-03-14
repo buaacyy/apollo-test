@@ -8,7 +8,7 @@ config: {
 
 config: {
   rule_id: CHANGE_LANE
-  enabled: true
+  enabled: false
   change_lane {
     min_overtake_distance: 10.0
     min_overtake_time: 2.0
@@ -22,7 +22,7 @@ config: {
   rule_id: CROSSWALK
   enabled: true
   crosswalk {
-    stop_distance: 1.0
+    stop_distance: 30.0
     max_stop_deceleration: 6.0
     min_pass_s_distance: 1.0
     max_stop_speed: 0.3
